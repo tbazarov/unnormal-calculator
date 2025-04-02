@@ -1,1 +1,1 @@
-# unnormal-calculator
+# modern (не talking) calculator
