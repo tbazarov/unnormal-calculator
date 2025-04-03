@@ -19,16 +19,16 @@ set(HEADERS
     include/FileHandler.h
 )
 
-# Добавляем возможность запуска тестов
-enable_testing()
-
-# Добавляем тестовый запуск
-add_test(NAME TestAddition COMMAND NumberSystemAdder ../test/input.txt output.txt)
-
 # Создаем исполняемый файл
 add_executable(NumberSystemAdder ${SOURCES} ${HEADERS})
 
 # Указываем пути к заголовочным файлам
 target_include_directories(NumberSystemAdder PRIVATE include)
 
+
+# Подпроект с тестами
+option(BUILD_TESTS "Build tests" ON)
+if(BUILD_TESTS)
+    enable_testing()
+    add_subdirectory(test/unit_tests)
 endif()
