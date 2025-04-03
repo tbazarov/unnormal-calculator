@@ -12,11 +12,11 @@
 
 Для тестов (просьба при скачивании папки test поправить опечатку в название unit_tests)
 
-cd project/build
-rm -rf *  # Очистка предыдущей сборки
-cmake -DBUILD_TESTS=ON ..
-make
-ctest --output-on-failure
+1) cd project/build
+2) rm -rf *  # Очистка предыдущей сборки
+3) cmake -DBUILD_TESTS=ON ..
+4) make
+5) ctest --output-on-failure
 
 Пример вывода при успешном тестировании:
 
