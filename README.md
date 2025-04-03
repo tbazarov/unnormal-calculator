@@ -3,33 +3,12 @@
 
 Инструкция по запуску программы (без тестов):
 
-1) Необходимо расположить все файлы в заданном порядке, иначе исполнение может быть некорректным
-
-modern calc/
-├── CMakeLists.txt
-├── include/
-│   ├── FileHandler.h
-│   ├── InputParser.h
-│   └── NumberSystemConverter.h
-├── src/
-│   ├── FileHandler.cpp
-│   ├── InputParser.cpp
-│   ├── main.cpp
-│   └── NumberSystemConverter.cpp
-├── test/
-│   ├── input.txt
-│   └── unit_tests/
-│       ├── CMakeLists.txt
-│       ├── test_main.cpp
-│       ├── test_number_converter.cpp
-│       └── test_input_parser.cpp
-
-3) создаем файл mkdir build
-4) переходим - cd build
-5) прописать cmake ..
-6) и ввести make
-cmake соберет воедино все файлы и даст название исполняемому файлу - ./NumberSystemAdder
-7) для запуска нужно ввести ./NumberSystemAdder ../test/input.txt output.txt (файл input.txt может меняться в зависимости от выбора исходных данных)
+1) Необходимо расположить все файлы по папкам, как в указано в репозитории, иначе исполнение может быть некорректным
+2) создаем файл mkdir build
+3) переходим - cd build
+4) прописать cmake ..
+5) и ввести make (cmake соберет воедино все файлы и даст название исполняемому файлу - ./NumberSystemAdder)
+6) для запуска нужно ввести ./NumberSystemAdder ../test/input.txt output.txt (файл input.txt может меняться в зависимости от выбора исходных данных)
 
 Для тестов (просьба при скачивании папки test поправить опечатку в название unit_tests)
 
